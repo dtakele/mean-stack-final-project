@@ -1,0 +1,88 @@
+<br><br>
+<fieldset><legend><strong>Item Detail:</strong></legend>
+
+    <table class="table">
+
+        <tr>
+            <td rowspan="4">
+                <img class="rounded-circle" src="../angularjs/item-detail/forsale.jpg" height="93" width="96"/>
+            </td>
+        </tr>
+
+        <tr *ngIf="item" >
+            <td>
+                <strong>Title:</strong>
+            </td>
+            <td>
+                {{item.title}}
+            </td>
+            </tr>
+        <tr *ngIf="item" >
+            <td>
+                <strong>Price($):</strong>
+            </td>
+            <td>
+                {{item.price}}
+            </td>
+            </tr>
+        <tr *ngIf="item" >
+            <td>
+                <strong>Description:</strong>
+            </td>
+            <td>
+                {{item.description}}
+            </td>
+        </tr>
+
+    </table>
+</fieldset>
+
+<br><br>
+<fieldset *ngIf="item"><legend><strong>Contact Info:</strong></legend>
+    <table class="table">
+    <tr>
+        <td>
+            <strong>Owner Name:</strong>
+        </td>
+        <td>
+            {{item.fullname}}
+        </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>Address:</strong>
+            </td>
+        <td>
+            {{item.address}}
+        </td>
+            </tr>
+        <tr>
+            <td>
+                <strong>Phone Number:</strong>
+            </td>
+        <td>
+            {{item.phonenumber}}
+        </td>
+    </tr>
+        <tr>
+            <td>
+                <strong>Email:</strong>
+            </td>
+            <td>
+                {{item.email}}
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                <br>
+                <button type="button" class="btn btn-secondary btn-m active" role="button" aria-pressed="true" (click)="goBack()">
+                    <i class="fa fa-arrow-left"></i> Back</button>
+            </td>
+        </tr>
+
+    </table>
+    </fieldset>

@@ -1,0 +1,38 @@
+<br>
+<br>
+<div class="row">
+
+    <div class="input-group margin-bottom-sm">
+        <span class="input-group-addon"><i class="fa fa-search fa-fw"></i></span>
+        <input class="form-control" #searchBox (keyup)="search(searchBox.value)" type="text" placeholder="Search items">
+    </div>
+
+</div>
+<br>
+<div class="row">
+
+    <table class="table table-hover table-striped table-bordered ">
+
+        <thead class="thead-inverse">
+        <tr>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Address</th>
+        </tr>
+        </thead>
+
+        <tr *ngFor="let item of items | async" (click)="selectItem(item)">
+            <td>
+                {{item.title}}
+            </td>
+            <td>
+                {{item.price}}
+            </td>
+            <td>
+                {{item.address}}
+            </td>
+        </tr>
+
+    </table>
+
+</div>
