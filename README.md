@@ -1,6 +1,6 @@
 ##Modern Web Applications Assignments
 
-###MongoDB, NodeJS, ExpressJS, Angular 2,Bootstrap
+###MongoDB, NodeJS, ExpressJS, Angular 2, (MEAN stach) and Bootstrap
 
 Responsive (Mobile first) web-based app using latest technologies of the time (current state of art)
 
